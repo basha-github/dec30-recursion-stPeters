@@ -6,13 +6,16 @@ public class RecVersion2 {
 		// n!
 		// 1 2 3 .... n
 		int n = 5;
-		int res = factorial(n);
+		long res = factorial(n);
 		System.out.println(res);
 		
 	}
 
-	private static int factorial(int n) {
-			return  n > 1 ? n * factorial(n-1):1;
+	private static long factorial(int n) {
+			//return  n > 1 ? n * factorial(n-1):1;
+		if(n > 1) return n * factorial(n-1);
+		return 1;
+			
 		
 	}
 
